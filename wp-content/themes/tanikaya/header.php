@@ -111,24 +111,69 @@
 
 <body>
 <div id="container">
+<!--
 	<div id="top-menu" class="hidden-xs">
     	<div id="logo" class=""></div>
-        <!--
+        
         <ul id="mnPage1">
-            	<li><a href="javascript:void(0)">LIVE</a></li>
-                <li><a href="javascript:void(0)">LEARN</a></li>
-                <li><a href="javascript:void(0)">GIVE</a></li>
-                <li><a href="javascript:void(0)">PRAISE</a></li>
+            	<li><a href="javascript:void(0)">TENTANG</a></li>
+                <li><a href="javascript:void(0)">PRODUK</a></li>
+                <li><a href="javascript:void(0)">PENGALAMAN</a></li>
+                <li><a href="javascript:void(0)">BERITA</a></li>
+                <li><a href="javascript:void(0)">GALERI</a></li>
+                <li><a href="javascript:void(0)">BROSUR</a></li>
+                <li><a href="javascript:void(0)">KONTAK</a></li>
         </ul>
-        <ul id="mnPage2">
-            	<li><a href="javascript:void(0)">YOUNIVERSE</a></li>
-                <li id="live"><a href="javascript:void(0)">LIVE'S A CANVAS CLASS</a></li>
-                <li id="about"><a href="javascript:void(0)">ABOUT</a></li>
-                <li><a href="javascript:void(0)">WORK WITH ME</a></li>
-        </ul>
+        
         <?php //wp_nav_menu( array('menu' => 'top-menu' )); ?>
-        -->
+        
     </div>
     <div id="top-menu-mobile" class="hidden-md hidden-sm hidden-lg">
     	<div id="logo" class=""></div>
     </div>    
+    -->
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mnHeader">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      <img alt="TANIKAYA" class="img-responsive hidden-xs" src="<?php bloginfo('template_url'); ?>/images/logo.png">
+      <img alt="TANIKAYA" class="img-responsive visible-xs" src="<?php bloginfo('template_url'); ?>/images/logo-sm.png">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="mnHeader">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+        	<a href="javascript:void(0)"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TENTANG <span class="caret"></span></a>
+        	<ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          	</ul>
+        </li>
+        <li class="dropdown">
+        	<a href="javascript:void(0)"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUK <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          	</ul>
+        </li>
+        <li><a href="javascript:void(0)">PENGALAMAN</a></li>
+        <li><a href="javascript:void(0)">BERITA</a></li>
+        <li><a href="javascript:void(0)">GALERI</a></li>
+        <li><a href="javascript:void(0)">BROSUR</a></li>
+        <li><a href="javascript:void(0)">KONTAK</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
