@@ -217,28 +217,15 @@ li#about{
 #mnHeader{
 	z-index:9;
 }
-#content{
-	display:block;
-	position:relative;
-	margin:50px auto;
-	height:100%;
-	text-align:center;
-	/*max-width:1200px;*/
-	float:none !important;
-	padding:0;
-}
-#content-wrapper{
-	display:block;
-	position:relative;
-	/*margin:60px auto;*/
-	height:100%;
-	text-align:center;
-	max-width:1200px;
-}
-#content-title{
+
+.content-title{
 	font-weight:normal;
 	font-size:30pt;
-	margin:0 0 50px 0;
+	margin:50px 0 50px 0;
+	text-align:center;
+}
+.grey-bg{
+	background:#ebebeb;
 }
 .hero{
 	display:block;

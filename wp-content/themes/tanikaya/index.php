@@ -54,43 +54,42 @@
     
     
     <!-- content -->
-    <div id="content" class="row">
-    	<div id="content-wrapper" class="col-md-10 col-md-offset-1"><!--
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="content-container1">
-                    <h2>HELLO FROM HELENA</h2>
-                    <div class="button_content"><div id="hello"></div></div>
-                    <div class="content_box"><img src="<?php bloginfo('template_url'); ?>/images/content_01.jpg" /></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="content-container2">
-                    <h2>WORK WITH YOU</h2>
-                    <div class="button_content"><div id="work"></div></div>
-                    <div class="content_box"><img src="<?php bloginfo('template_url'); ?>/images/content_02.jpg" /></div>
-                </div>	
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="content-container1">
-                    <h2>LIFE'S A CANVAS</h2>
-                    <div class="button_content"><div id="life"></div></div>
-                    <div class="content_box"><img src="<?php bloginfo('template_url'); ?>/images/content_03.jpg" /></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="content-container2">
-                    <h2>HANGOUT WITH HELENA</h2>
-                    <div class="content_box">
-                        <div id="hangout">
-                         <?php echo do_shortcode('[contact-form-7 id="48" title="Contact form 1"]'); ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-            <div id="content-title">Produk <b>Terbaru</b></div>
+    <div class="row">
+    	<div class="col-md-10 col-md-offset-1">
+        	<div class="content-title">Produk <b>Terbaru</b></div>
             <?php echo do_shortcode('[recent_products per_page="12" columns="3"]'); ?>
         </div>
+    </div>
+    <div class="grey-bg row">
+    	<div class="col-md-10 col-md-offset-1">
+        	<div class="row">
+            	<div class="col-md-12">
+                	<div class="content-title">Berita <b>Terkini</b></div>
+                </div>
+            </div>
+            <div class="row">
+                
+				<?php
+                    $args = array( 'numberposts' => '3' );
+                    $recent_posts = wp_get_recent_posts( $args );
+                    foreach( $recent_posts as $recent ){
+                        ?>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                            	<?php echo get_the_post_thumbnail( $recent["ID"], array(300,200) ); ?>
+                            </div>
+                        	<p>
+                            	<a href="<?php echo get_permalink($recent["ID"]);?>">
+									<?php echo $recent["post_title"];?>
+                                </a> 
+                            </p>
+                         </div>
+                       <?php     
+                    }
+                ?>
+                
+             </div>
+         </div>
     </div>
 
 <?php get_footer(); ?>
