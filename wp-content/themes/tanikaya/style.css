@@ -8,8 +8,8 @@ Version: 1.0
 @import url('bootstrap/bootstrap.min.css');
 @import url('bootstrap/bootstrap-theme.min.css');
 @import url('fontawesome/font-awesome.min.css');
-/*@import url(http://fonts.googleapis.com/css?family=Raleway:800,500,300);*/
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:800,500,300);
+/*
 @font-face
 {
 font-family: Raleway;
@@ -27,7 +27,7 @@ font-family: Raleway;
 src: url(fonts/Raleway-Bold.ttf);
 font-weight:bold;
 }
-
+*/
 /* jssor slider bullet navigator skin 21 css */
             /*
             .jssorb21 div           (normal)
@@ -75,97 +75,7 @@ font-weight:bold;
 	font-family:'Raleway';
 	
 }
-/*#top-menu{
-	position:relative;
-	display:block;
-	height:100px;
-	width:100%;
-	background-color:#fff;
-	z-index:9999;
-	top:0px;
-}
-#top-menu-mobile{
-	position:relative;
-	display:block;
-	height:40px;
-	width:100%;
-	background-color:#14b5d9fff;
-}
-#top-menu-mobile #logo{
-	display:block;
-	position:relative;
-	height:40px;
-	width:153px;
-	background:url(images/logo.png) no-repeat center;
-	background-size:153px 40px;
-	margin:0 0 0 20px;
-	float:left;
-	cursor:pointer;
-}
-#logo{
-	display:block;
-	position:relative;
-	height:60px;
-	width:240px;
-	background:url(images/logo.png) no-repeat center;
-	margin:20px 0 0 20px;
-	float:left;
-	cursor:pointer;
-}
-#top-menu ul#mnPage1{
-	display:block;
-	width:600px;
-	float:right;
-	padding-top:40px;
-	font-size:16pt;
-}
 
-#top-menu ul#mnPage2{
-	display:block;
-	width:600px;
-	float:right;
-	padding-top: 28px;
-	font-size:12pt;
-}
-
-#top-menu li{
-	display:inline;
-	margin:0 20px 0 0;
-	padding:0;
-	float:left;
-	text-align:center;
-}
-#top-menu #mnPage2 li{
-	display:block;
-	margin:0 8px 0 8px;
-	padding:0;
-	width:100%;
-	float:left;
-	text-align:right;
-}
-li#live{
-	width:170px !important;
-}
-li#about{
-	width:60px !important;
-}
-#top-menu #mnPage1 li a{
-	font-weight:bolder;
-	font-size:10pt;
-	letter-spacing:-0.15px;
-	color:#707070;
-	text-decoration:none;
-	text-align:center;
-	display:block;
-}
-#top-menu #mnPage2 li a{
-	font-size:10pt;
-	letter-spacing:-0.15px;
-	color:#ffffff;
-	text-decoration:none;
-	text-align:right;
-}
-*/
 .navbar{
 	background: #fff;
 	border: none;
@@ -325,51 +235,23 @@ li#about{
 	left:640px;
 	
 }
-#hello{
-	background:url(images/button_01.png) no-repeat center;
-	z-index: 9;
-	display: block;
-	width: 120px;
-	height: 40px;
-	margin: 0 auto;
+#recent-news>div{
+	text-align:center;
+	font-weight:normal;
 }
-#work{
-	background:url(images/button_02.png) no-repeat center;
-	z-index: 9;
-	display: block;
-	width: 120px;
-	height: 40px;
-	margin: 0 auto;
+#recent-news>div>a{
+	color:#4d9a37;
+	font-size:13pt;
 }
-#life{
-	background:url(images/button_03.png) no-repeat center;
-	z-index: 9;
-	display: block;
-	width: 120px;
-	height: 40px;
-	margin: 0 auto;
+#recent-news>div>a:hover{
+	color:#4d9a37;
+	font-size:13pt;
+	text-decoration:none;
 }
-#hangout{
-	z-index: 9;
-	display: block;
-	width: 285px;
-	height: 40px;
-	margin: 0 auto;
+.recent-date{
+	text-align:center;
+	font-size:13pt;
 }
-#hangout .button_content{
-	top:194px !important;
-}
-#sendout{
-	margin:0 auto;
-	display: block;
-	width: 140px;
-	height: 40px;
-}
-
-
-
-
-
 
 
 #footer{

@@ -67,7 +67,7 @@
                 	<div class="content-title">Berita <b>Terkini</b></div>
                 </div>
             </div>
-            <div class="row">
+            <div id="recent-news" class="row">
                 
 				<?php
                     $args = array( 'numberposts' => '3' );
@@ -78,11 +78,11 @@
                             <div class="thumbnail">
                             	<?php echo get_the_post_thumbnail( $recent["ID"], array(300,200) ); ?>
                             </div>
-                        	<p>
-                            	<a href="<?php echo get_permalink($recent["ID"]);?>">
-									<?php echo $recent["post_title"];?>
-                                </a> 
-                            </p>
+                        	<div class="recent-date"><?php echo date('j F Y', strtotime($recent["post_date"]));?></div>
+                            <a href="<?php echo get_permalink($recent["ID"]);?>">
+                                <?php echo $recent["post_title"];?>
+                            </a> 
+                            
                          </div>
                        <?php     
                     }
