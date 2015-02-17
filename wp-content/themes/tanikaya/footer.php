@@ -14,14 +14,20 @@
                     </p>
                 </div>
                 <div id="fcon2" class="col-md-2">
-                    <p>Phone
+                    <p><b>Phone</b><br />
                     +62 21 788 30995
                     </p>
                     <p>
-                    Fax
+                    <b>Fax</b><br />
                     +62 21 788 30994</p>
                 </div>
                 <div id="fcon3" class="col-md-2">
+                	<p><b>BBM PIN</b><br />
+                    7D64B60C
+                    </p>
+                    <p>
+                    <b>Email</b><br />
+                    business@tanikaya.com</p>
                 </div>
                 <div id="fcon4" class="col-md-2 col-md-offset-2">
                 </div>
