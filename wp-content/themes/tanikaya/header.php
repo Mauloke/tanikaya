@@ -177,3 +177,19 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div id="headContactContainer">
+    <div id="hcontact">
+        <span id="hphone">
+            <div>PHONE</div>
+            <div>+62 21 78830995</div>
+        </span>
+        <span id="hfax">
+            <div>FACSIMILE</div>
+            <div>+62 21 78830994</div>
+        </span>
+        <span id="hbbm">
+            <div>BBM PIN</div>
+            <div>7D64B60C</div>
+        </span>
+    </div>
+</div>

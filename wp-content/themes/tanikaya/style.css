@@ -9,6 +9,7 @@ Version: 1.0
 @import url('bootstrap/bootstrap-theme.min.css');
 @import url('fontawesome/font-awesome.min.css');
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,500,300);
+@import url(http://fonts.googleapis.com/css?family=Nunito);
 /*
 @font-face
 {
@@ -127,6 +128,34 @@ font-weight:bold;
 #mnHeader{
 	z-index:9;
 }
+#headContactContainer{
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+#hcontact{
+	float: right;
+	margin: 20px 20px 0 0;
+	color:#fff;
+	font-family: 'Nunito', sans-serif;
+	font-size:12pt;
+}
+#hcontact span{
+	position:relative;
+	display:block;
+	float:left;
+	margin: 0 20px 0 0;
+	padding: 0 0 0 30px;
+}
+#hphone{
+	background:url(images/phone.png) no-repeat top left;
+}
+#hfax{
+	background:url(images/fax.png) no-repeat top left;
+}
+#hbbm{
+	background:url(images/bbm.png) no-repeat top left;
+}
 
 .content-title{
 	font-weight:normal;
@@ -204,27 +233,7 @@ font-weight:bold;
 	width:200px;
 	margin-left:20px;
 }
-#f1-c1{
-	position:absolute;
-	left:580px;
-	top:20px;
-}
-#f1-c1 span{
-	position:relative;
-	display:block;
-	float:left;
-	margin: 0 20px 0 0;
-	padding: 0 0 0 30px;
-}
-#hphone{
-	background:url(images/phone.png) no-repeat top left;
-}
-#hfax{
-	background:url(images/fax.png) no-repeat top left;
-}
-#hbbm{
-	background:url(images/bbm.png) no-repeat top left;
-}
+
 #f2{
 	top:580px;
 	left:640px;
