@@ -244,6 +244,9 @@ font-weight:bold;
 	left:640px;
 	
 }
+#recent-news{
+	margin-bottom:50px;
+}
 #recent-news>div{
 	text-align:center;
 	font-weight:normal;
@@ -287,6 +290,22 @@ font-weight:bold;
 }
 #fcon1 p b{
 	font-size:12px;
+}
+#fcon2{
+	height: 100%;
+	border-left: 1px;
+	border-left-style: solid;
+	border-color: #959595;
+	display: block;
+	padding:0 40px 0 40px;
+}
+#fcon3{
+	height: 100%;
+	border-left: 1px;
+	border-left-style: solid;
+	border-color: #959595;
+	display: block;
+	padding:0 40px 0 40px;
 }
 .footer-bottom{
 	height: 50px;
