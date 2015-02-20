@@ -1,35 +1,27 @@
 <?php get_header(); ?>
-<?php
-$_SERVER['REQUEST_URI_PATH'] = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$segments = explode('/', $_SERVER['REQUEST_URI_PATH']);
-?>
-<div id="auwrapper" style="background: url(<?php bloginfo('stylesheet_directory'); ?>/images/header-<?php echo $segments[1] ?>.png) no-repeat top center, url(<?php bloginfo('stylesheet_directory'); ?>/images/bg-auth-bottom.png) no-repeat bottom center;">
-    <div class="aucontainer">
-    <div id="auheader">
-    	<div id="back"></div>
-    	<div id="search">
-        	<?php get_search_form(true); ?>
+<div class="row">
+	<div class="col-md-12" id="produk-head-container">
+        <div id="backdrop-produk">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="jumbotron">
+                      <h1>Tentang Kami</h1>
+                      <p><a class="btn btn-primary btn-lg" href="<?php echo do_shortcode("[download_data id='76' data='download_link']"); ?>">DOWNLOAD COMPANY PROFILE</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <?php get_sidebar(); ?>
-<!-- The Loop -->
+	</div>
+</div>
 
-    <div id="blog">
-		<?php woocommerce_content(); ?>
+
+
+    <div id="blog" class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+			<?php woocommerce_content(); ?>
+            </div>
+        </div>
 	</div>
 
 <!-- End Loop -->
-
-    </div>
-</div>
-</body>
-</html>
-<script language="javascript">
-jQuery(document).ready(function($) {
-	$('html').niceScroll({cursorcolor:"#000"});
-	$('.scroll').niceScroll({background:"#fff",cursoropacitymin:0.2,cursoropacitymax:0.7,railalign: 'left',cursorwidth:'10px'});
-	$('#back').click(function(){
-	  window.location = "<?php echo home_url(); ?>";
-	});
-});
-</script>

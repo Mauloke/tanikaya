@@ -110,7 +110,7 @@
 </head>
 
 <body>
-<div id="container">
+<div id="container" class="container-fluid">
 <!--
 	<div id="top-menu" class="hidden-xs">
     	<div id="logo" class=""></div>
@@ -132,6 +132,8 @@
     	<div id="logo" class=""></div>
     </div>    
     -->
+    <div class="row">
+    <div class="col-md-12">
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -177,8 +179,10 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div id="headContactContainer">
-    <div id="hcontact">
+</div>
+</div>
+<div id="headContactContainer" class="row">
+    <div id="hcontact" class="row-md-12">
         <span id="hphone">
             <div>PHONE</div>
             <div>+62 21 78830995</div>
