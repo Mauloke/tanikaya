@@ -19,20 +19,7 @@
                         <div id="f1-b1-2" class="hero-btn">JELAJAHI PRODUK KAMI</div>
                     </div>
                     
-                    <div id="f1-c1">
-                    	<span id="hphone">
-                        	<div>PHONE</div>
-                            <div>+62 21 78830995</div>
-                        </span>
-                        <span id="hfax">
-                        	<div>FACSIMILE</div>
-                            <div>+62 21 78830994</div>
-                        </span>
-                        <span id="hbbm">
-                        	<div>BBM PIN</div>
-                            <div>7D64B60C</div>
-                        </span>
-                    </div>
+                    
                 </div> 
             </div>
             <!--<div><img u="image" src="<?php bloginfo('template_url'); ?>/images/slide2.jpg" /><div class="findout" id="f2"></div></div>

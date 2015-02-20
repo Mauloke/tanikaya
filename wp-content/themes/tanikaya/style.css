@@ -9,6 +9,7 @@ Version: 1.0
 @import url('bootstrap/bootstrap-theme.min.css');
 @import url('fontawesome/font-awesome.min.css');
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,500,300);
+@import url(http://fonts.googleapis.com/css?family=Nunito);
 /*
 @font-face
 {
@@ -73,9 +74,13 @@ font-weight:bold;
 			
 #container{
 	font-family:'Raleway';
-	
+	padding:0;
+	margin:0;
 }
-
+.row{
+	margin:0;
+	padding:0;
+}
 .navbar{
 	background: #fff;
 	border: none;
@@ -103,7 +108,7 @@ font-weight:bold;
 	background:#fff;
 }
 .navbar-nav li a{
-	font-weight:bolder;
+	font-weight:800;
 	font-size:12pt;
 	z-index:9;
 }
@@ -127,6 +132,34 @@ font-weight:bold;
 #mnHeader{
 	z-index:9;
 }
+#headContactContainer{
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+#hcontact{
+	float: right;
+	margin: 20px 20px 0 0;
+	color:#fff;
+	font-family: 'Nunito', sans-serif;
+	font-size:12pt;
+}
+#hcontact span{
+	position:relative;
+	display:block;
+	float:left;
+	margin: 0 20px 0 0;
+	padding: 0 0 0 30px;
+}
+#hphone{
+	background:url(images/phone.png) no-repeat top left;
+}
+#hfax{
+	background:url(images/fax.png) no-repeat top left;
+}
+#hbbm{
+	background:url(images/bbm.png) no-repeat top left;
+}
 
 .content-title{
 	font-weight:normal;
@@ -136,6 +169,8 @@ font-weight:bold;
 }
 .grey-bg{
 	background:#ebebeb;
+	margin:0;
+	padding:0;
 }
 .hero{
 	display:block;
@@ -168,7 +203,7 @@ font-weight:bold;
 }
 #f1-l2-b{
 	font-size:40pt;
-	font-weight:bold;
+	font-weight:700;
 	letter-spacing:10pt;
 }
 #f1-l3{
@@ -189,7 +224,7 @@ font-weight:bold;
 	border-radius: 25px;
 	height:40px;
 	text-align:center;
-	font-weight:bolder;
+	font-weight:800;
 	padding-top:10px;
 	display:block;
 	position:relative;
@@ -204,27 +239,7 @@ font-weight:bold;
 	width:200px;
 	margin-left:20px;
 }
-#f1-c1{
-	position:absolute;
-	left:580px;
-	top:20px;
-}
-#f1-c1 span{
-	position:relative;
-	display:block;
-	float:left;
-	margin: 0 20px 0 0;
-	padding: 0 0 0 30px;
-}
-#hphone{
-	background:url(images/phone.png) no-repeat top left;
-}
-#hfax{
-	background:url(images/fax.png) no-repeat top left;
-}
-#hbbm{
-	background:url(images/bbm.png) no-repeat top left;
-}
+
 #f2{
 	top:580px;
 	left:640px;
@@ -267,6 +282,7 @@ font-weight:bold;
 	color:#959595;
 	padding:0;
 	margin:0;
+	background-size: 100% 100%;
 }
 .footer-top{
 	height:250px;
@@ -371,7 +387,7 @@ font-weight:bold;
 	width:140px;
 	height:28px;
 	margin:0 10px 0 0;
-	font-weight:bold;
+	font-weight:700;
 	margin-top: 5px;
 	font-size:9pt;
 }
@@ -415,43 +431,89 @@ font-weight:bold;
 	margin:0 10px 0 0;
 	cursor:pointer;
 }
+.jumbotron{
+	background:none;
+	color:#fff;
+	margin-top:200px;
+	padding:0;
+}
+.jumbotron h1{
+	font-size:38pt;
+}
+.jumbotron h2{
+	color:#fddc41;
+	font-size:24pt;
+}
+.jumbotron a{
+	font-size: 10pt;
+	font-family: 'Raleway';
+	font-weight: 700;
+	border-radius: 25px;
+	background: #4d9a37;
+	border: none;
+}
 
 
 
-
-.backdrop{
+#tentang-head-container{
+	height:500px;
+	margin:0;
+	padding:0;
+}
+#backdrop-tentang{
+	/*position:absolute;*/
+	top:0px;
+	width:100%;
+	background:url('images/bgtentang.jpg') center top;
+	background-size:100% 100%;
+	height:500px;
+}
+#produk-head-container{
+	height:250px;
+	margin:0;
+	padding:0;
+}
+#backdrop-produk{
 	position:absolute;
 	top:0px;
 	width:100%;
-	background:#1989a3;
-	z-index:-999;
+	background:url('images/bgproduk.jpg') center top;
+	background-size:100% 100%;
+	height:250px;
+}
+#backdrop-produk .jumbotron{
+	background:none;
+	color:#fff;
+	margin-top:100px;
+	padding:0;
 }
 #blog{
-	width:960px;
-	display:block;
-	position:relative;
-	overflow:none;
-	margin:0 auto;
-	padding:80px 0 0 0;
-	min-height:600px !important;
 }
 .entry{
-	position:relative;
-	display:block;
-	width:760px;
-	margin:0 auto;
-	padding:50px 0 100px 0;
+	margin: 60px 0 100px 0;
 }
+.entry h2{
+	font-weight:800;
+	color:#4d9a37;
+	font-size:24pt;
+}
+.entry p{
+	color:#707070;
+	font-size:14pt;
+	margin: 20px 0 20px 0;
+	line-height:30px;
+	letter-spacing: 0.2px;
+}
+.entry li{
+	color:#707070;
+	font-size:14pt;
+}
+
 p.white{
 	color:#ffffff !important;
 	font-size:15pt !important;
 }
-.entry p{
-	color:#555555;
-	font-size:13pt;
-	line-height:30px;
-	letter-spacing: 0.2px;
-}
+
 .entry h3{
 	color:#00b3da;
 	font-size:20pt;
