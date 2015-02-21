@@ -41,7 +41,7 @@
     
     
     <!-- content -->
-    <div class="row">
+    <div class="row" id="recent-product">
     	<div class="col-md-10 col-md-offset-1">
         	<div class="content-title row">
             	<div class="col-md-12">
@@ -51,7 +51,7 @@
             
             <!-- start produk -->
             <?php //echo do_shortcode('[recent_products per_page="12" columns="3"]'); ?>
-            <div class="row-fluid">
+            <div class="row">
             <div class="col-md-12">
             <div u="slides" style="cursor: move; overflow: hidden;" class="row">
 
@@ -90,7 +90,7 @@
                 	<div class="content-title">Berita <b>Terkini</b></div>
                 </div>
             </div>
-            <div id="recent-news" class="row">
+            <div id="recent-news" class="row news">
                 
 				<?php
                     $args = array( 'numberposts' => '3' );

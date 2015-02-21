@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-2">
                     <div class="jumbotron">
-                      <h2>Tentang Kami</h2>
-                      <h1></h1>
+                      <h1>Tentang Kami</h1>
+                      <p><a class="btn btn-primary btn-lg" href="#" role="button">DOWNLOAD COMPANY PROFILE</a></p>
                     </div>
                 </div>
             </div>

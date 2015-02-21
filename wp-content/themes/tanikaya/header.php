@@ -144,7 +144,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>">
       <img alt="TANIKAYA" class="img-responsive hidden-xs" src="<?php bloginfo('template_url'); ?>/images/logo.png">
       <img alt="TANIKAYA" class="img-responsive visible-xs" src="<?php bloginfo('template_url'); ?>/images/logo-sm.png">
       </a>
@@ -152,25 +152,40 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="mnHeader">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-        	<a href="javascript:void(0)"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TENTANG <span class="caret"></span></a>
-        	<ul class="dropdown-menu" role="menu">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          	</ul>
+      <ul class="nav navbar-nav navbar-right" role="menu">
+        <li>
+        	<a href="<?php echo home_url(); ?>/tentang-kami">TENTANG</a>
+            
         </li>
         <li class="dropdown">
         	<a href="javascript:void(0)"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUK <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          	</ul>
-        </li>
+<?php 
+			$args = array(
+				'parent' => '0',
+			);
+			$product_categories = get_terms( 'product_cat', $args ); 
+			if ( $product_categories ) {
+			
+			//woocommerce_product_loop_start();
+			?>
+			<ul class="dropdown-menu" role="menu">
+				<?php
+                foreach ( $product_categories as $category ) {
+                    ?>
+                    <li class="dropdown">
+                    <a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
+					<?php echo $category->name; ?>
+                    </a>
+                    </li>
+                    <?php
+                }
+                ?>
+            </ul>
+            <?php
+			}
+			?>        </li>
         <li><a href="javascript:void(0)">PENGALAMAN</a></li>
-        <li><a href="javascript:void(0)">BERITA</a></li>
+        <li><a href="<?php echo home_url(); ?>/category/news">BERITA</a></li>
         <li><a href="javascript:void(0)">GALERI</a></li>
         <li><a href="javascript:void(0)">BROSUR</a></li>
         <li><a href="javascript:void(0)">KONTAK</a></li>
