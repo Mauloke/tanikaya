@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="row">
+    <div class="row single-product-content">
         <div class="col-md-4">
         <?php
             /**

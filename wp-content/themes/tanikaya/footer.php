@@ -30,6 +30,7 @@
                     business@tanikaya.com</p>
                 </div>
                 <div id="fcon4" class="col-md-2 col-md-offset-2">
+                	<?php get_search_form( true ); ?>
                 </div>
             </div>
         </div>

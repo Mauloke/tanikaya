@@ -188,7 +188,7 @@
         <li><a href="<?php echo home_url(); ?>/category/news">BERITA</a></li>
         <li><a href="javascript:void(0)">GALERI</a></li>
         <li><a href="javascript:void(0)">BROSUR</a></li>
-        <li><a href="javascript:void(0)">KONTAK</a></li>
+        <li><a href="<?php echo home_url(); ?>/contact">KONTAK</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
