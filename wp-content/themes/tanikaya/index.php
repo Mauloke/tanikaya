@@ -40,23 +40,26 @@
     </div>
     
     
-    <!-- content -->
-    <div class="row">
+    
+    </div>
+    
+    
+    
+    <div class="row" id="recent-product">
     	<div class="col-md-10 col-md-offset-1">
-        	<div class="content-title row">
-            	<div class="col-md-12">
-            	Produk <b>Terbaru</b>
-                </div>
+        	<div class="col-md-12">
+            	<div class="content-title row">Produk <b>Terbaru</b></div>
             </div>
+        </div>
             
             <!-- start produk -->
             <?php //echo do_shortcode('[recent_products per_page="12" columns="3"]'); ?>
-            <div class="row-fluid">
+            <div class="row">
             <div class="col-md-12">
             <div u="slides" style="cursor: move; overflow: hidden;" class="row">
 
 			<?php
-                $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' );
+                $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
     
@@ -82,15 +85,15 @@
         </div>
         <!-- end product -->
         </div>
-    </div>
-    <div class="grey-bg row">
+    
+    <div class="grey-bg row" id="recent-news">
     	<div class="col-md-10 col-md-offset-1">
         	<div class="row">
             	<div class="col-md-12">
                 	<div class="content-title">Berita <b>Terkini</b></div>
                 </div>
             </div>
-            <div id="recent-news" class="row">
+            <div class="row news">
                 
 				<?php
                     $args = array( 'numberposts' => '3' );
