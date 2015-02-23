@@ -50,5 +50,46 @@ get_header( 'shop' ); ?>
 	?>
 
 </div>
-<?php do_action('tanikaya_related_product'); ?>
-<?php get_footer( 'shop' ); ?>
+
+<div class="row grey-bg" id="recent-product">
+    	<div class="col-md-10 col-md-offset-1">
+        	<div class="col-md-12">
+            	<div class="content-title row">Produk <b>Terbaru</b></div>
+            </div>
+        </div>
+            
+            <!-- start produk -->
+            <?php //echo do_shortcode('[recent_products per_page="12" columns="3"]'); ?>
+            <div class="row">
+            <div class="col-md-12">
+            <div u="slides" style="cursor: move; overflow: hidden;" class="row">
+
+			<?php
+                $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' );
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+    
+                       <div class="col-sm-6 col-md-4">    
+    
+                            <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+    						<div class="thumbnail">
+                                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
+    						</div>
+                                <h3><?php the_title(); ?></h3>
+    
+                                   <span class="price"><?php echo $product->get_price_html(); ?></span>
+    
+                            </a>
+    
+                            <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+                        </div><!-- /span3 -->
+            <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
+    
+        </div>
+        </div>
+        </div>
+        <!-- end product -->
+        </div>
+    </div>
+	<?php get_footer( 'shop' ); ?>
