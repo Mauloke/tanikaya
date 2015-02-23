@@ -37,12 +37,10 @@ $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
 
-<div class="row grey-bg" id="recent-product">
-    	<div class="col-md-10 col-md-offset-1">
-        	<div class="col-md-12">
-            	<div class="content-title row">Produk <b>Lain</b></div>
-            </div>
-        </div>
+	<div class="related products row">
+		<div class="container">
+		<h2>Produk <b>Terbaru</b></h2>
+		<div class="row">
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
