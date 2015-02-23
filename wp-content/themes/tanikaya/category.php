@@ -22,7 +22,7 @@
             <div class="post_date col-md-12">
                 <?php the_date() ?>
             </div>
-			<div class="post_title col-md-12"><h2><?php the_title(); ?></h2></div>
+			<div class="post_title col-md-12"><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a></div>
 			<div class="entry col-md-12">	
 				<?php the_content(); ?>
 

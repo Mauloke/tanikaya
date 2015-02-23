@@ -2,9 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title>
-<?php wp_title(''); ?>
-</title>
+<title><?php wp_title('-','true','right'); ?><?php if ( is_single() ) ?><?php bloginfo('name'); ?></title>
 <meta name="author" content="Maulana Irsyad" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
 <meta name="apple-mobile-web-app-capable" content="yes" />

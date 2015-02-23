@@ -43,11 +43,10 @@
     <!-- content -->
     <div class="row" id="recent-product">
     	<div class="col-md-10 col-md-offset-1">
-        	<div class="content-title row">
-            	<div class="col-md-12">
-            	Produk <b>Terbaru</b>
-                </div>
+        	<div class="col-md-12">
+            	<div class="content-title row">Produk <b>Terbaru</b></div>
             </div>
+        </div>
             
             <!-- start produk -->
             <?php //echo do_shortcode('[recent_products per_page="12" columns="3"]'); ?>

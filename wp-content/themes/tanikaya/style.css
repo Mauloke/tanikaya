@@ -71,7 +71,10 @@ font-weight:bold;
             .jssora001r:hover { background-position: -190px -40px; }*/
             .jssora001ldn { background-position: -250px -40px; }
             .jssora001rdn { background-position: -310px -40px; }
-			
+
+a:hover{
+	text-decoration:none;
+}
 #container{
 	font-family:'Raleway';
 	padding:0;
@@ -169,6 +172,7 @@ font-weight:bold;
 	font-size:30pt;
 	margin:50px 0 50px 0;
 	text-align:center;
+	color:#707070;
 }
 .grey-bg{
 	background:#ebebeb;
