@@ -30,7 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php echo $after; ?>
 
 		<?php if ( sizeof( $breadcrumb ) !== $key + 1 ) : ?>
+        	<div class="category-delimiter">
 			<?php echo $delimiter; ?>
+            </div>
 		<?php endif; ?>
 
 	<?php endforeach; ?>
